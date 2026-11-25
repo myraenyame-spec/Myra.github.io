@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Myra | Code & Cosmos</title>
+<meta name="description" content="Myra's portfolio: a young computer science enthusiast exploring technology, coding and astronomy.">
+<style>
+:root{--bg:#080d20;--panel:#111a33;--text:#eef2ff;--muted:#aab7dc;--accent:#9cbaff;--line:#28365c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Arial,sans-serif;line-height:1.65}
+header{min-height:80vh;display:grid;place-items:center;text-align:center;padding:60px 20px;background:radial-gradient(ellipse at top,#324a91 0%,#111a33 45%,#080d20 78%)}
+.hero{max-width:850px}
+.eyebrow{color:#c6d5ff;letter-spacing:.16em;text-transform:uppercase;font-size:.85rem}
+h1{font-size:clamp(2.5rem,8vw,5.5rem);line-height:1.1;margin:.25em 0;color:#d9e5ff}
+header p{font-size:1.15rem;color:#d2dcf9;max-width:650px;margin:18px auto}
+.btn{display:inline-block;margin-top:20px;padding:12px 22px;border-radius:30px;background:#a9c3ff;color:#101832;text-decoration:none;font-weight:700}
+nav{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding:14px;background:#0c1429eF;border-bottom:1px solid var(--line)}
+nav a{color:var(--accent);text-decoration:none;font-weight:600}
+main{max-width:900px;margin:auto;padding:20px}
+section{padding:55px 5px}
+h2{font-size:1.8rem;color:var(--accent)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;margin:16px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card h3{margin-top:0;color:#dbe6ff}
+.tag{display:inline-block;padding:5px 10px;margin:4px;background:#202e51;border-radius:20px;color:#cbd9ff;font-size:.9rem}
+footer{text-align:center;padding:40px 20px;color:var(--muted);border-top:1px solid var(--line)}
+a{color:#b9ceff}
+</style>
+</head>
+<body>
+<header>
+<div class="hero">
+<div class="eyebrow">Curiosity • Creativity • Code</div>
+<h1>Hi, I'm Myra ✦</h1>
+<p>A high school student exploring computer science, building creative projects and learning about the universe.</p>
+<a class="btn" href="#projects">Explore my projects ↓</a>
+</div>
+</header>
+<nav aria-label="Main navigation">
+<a href="#about">About</a><a href="#projects">Projects</a><a href="#coding">Coding</a><a href="#astronomy">Astronomy</a>
+</nav>
+<main>
+<section id="about">
+<h2>🌱 About Me</h2>
+<div class="card">
+<p>I'm a student with a curious mind and a passion for technology. I enjoy coding, experimenting with ideas and turning concepts into creative projects. I'm also learning about astronomy and the wonders of the cosmos.</p>
+</div>
+</section>
+<section id="projects">
+<h2>💻 Projects</h2>
+<div class="cards">
+<div class="card"><h3>🎨 Kiko Artist</h3><p>A creative coloring-app concept built to make digital art fun and interactive.</p></div>
+<div class="card"><h3>💗 Mio</h3><p>A friendship-app project exploring profiles, matching and messaging features.</p></div>
+<div class="card"><h3>🚀 More soon</h3><p>I'm always learning and experimenting. More projects will appear here as I build them.</p></div>
+</div>
+</section>
+<section id="coding">
+<h2>⌨️ My Coding Journey</h2>
+<div class="card"><p>I'm exploring web development, programming and software design, learning step by step and making things along the way.</p><div><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Learning</span></div></div>
+</section>
+<section id="astronomy">
+<h2>🌌 Beyond the Code</h2>
+<div class="card"><p>Astronomy fascinates me: constellations, stars, planets, galaxies and the questions we still have about the universe. Looking up inspires me to keep learning and exploring.</p></div>
+</section>
+</main>
+<footer>Learning today. Building tomorrow. Exploring infinity. ✨</footer>
+</body>
+</html>
