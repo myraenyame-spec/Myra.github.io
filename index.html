@@ -1,70 +1,340 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Myra | Code & Cosmos</title>
-<meta name="description" content="Myra's portfolio: a young computer science enthusiast exploring technology, coding and astronomy.">
-<style>
-:root{--bg:#080d20;--panel:#111a33;--text:#eef2ff;--muted:#aab7dc;--accent:#9cbaff;--line:#28365c}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Arial,sans-serif;line-height:1.65}
-header{min-height:80vh;display:grid;place-items:center;text-align:center;padding:60px 20px;background:radial-gradient(ellipse at top,#324a91 0%,#111a33 45%,#080d20 78%)}
-.hero{max-width:850px}
-.eyebrow{color:#c6d5ff;letter-spacing:.16em;text-transform:uppercase;font-size:.85rem}
-h1{font-size:clamp(2.5rem,8vw,5.5rem);line-height:1.1;margin:.25em 0;color:#d9e5ff}
-header p{font-size:1.15rem;color:#d2dcf9;max-width:650px;margin:18px auto}
-.btn{display:inline-block;margin-top:20px;padding:12px 22px;border-radius:30px;background:#a9c3ff;color:#101832;text-decoration:none;font-weight:700}
-nav{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding:14px;background:#0c1429eF;border-bottom:1px solid var(--line)}
-nav a{color:var(--accent);text-decoration:none;font-weight:600}
-main{max-width:900px;margin:auto;padding:20px}
-section{padding:55px 5px}
-h2{font-size:1.8rem;color:var(--accent)}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;margin:16px 0}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card h3{margin-top:0;color:#dbe6ff}
-.tag{display:inline-block;padding:5px 10px;margin:4px;background:#202e51;border-radius:20px;color:#cbd9ff;font-size:.9rem}
-footer{text-align:center;padding:40px 20px;color:var(--muted);border-top:1px solid var(--line)}
-a{color:#b9ceff}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="google-site-verification" content="1Oul-XQYtt7D0-dSe4NiNJNNRHqIvX98-YuPlXxkAE8" />
+
+  <meta name="description" content="Meet Myra, a young computer science enthusiast, student coder and astronomy learner. Explore her projects and interests.">
+
+  <meta name="author" content="Myra">
+  <meta name="theme-color" content="#10152b">
+
+  <title>Myra | Coder & Astronomy Enthusiast</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #10152b;
+      color: #f5f4ff;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+      background: rgba(16, 21, 43, 0.95);
+      border-bottom: 1px solid #292f50;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      color: #c4a7ff;
+    }
+
+    nav a {
+      color: #eeeaff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #c4a7ff;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 70px 20px;
+      background:
+        radial-gradient(circle at 20% 20%, #34305d 0, transparent 35%),
+        radial-gradient(circle at 80% 70%, #252b59 0, transparent 35%),
+        #10152b;
+    }
+
+    .hero .tag {
+      color: #c4a7ff;
+      letter-spacing: 3px;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #c4a7ff;
+    }
+
+    .hero p {
+      max-width: 620px;
+      color: #c5c8df;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #a88aff;
+      color: #17132a;
+      padding: 13px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #d1bfff;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 75px 9%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: #d0bdff;
+    }
+
+    .section-intro {
+      color: #aeb4d1;
+      margin-bottom: 30px;
+    }
+
+    .about-text {
+      color: #d4d6e8;
+      max-width: 850px;
+      font-size: 17px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: #1a203d;
+      border: 1px solid #343b60;
+      padding: 27px;
+      border-radius: 18px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #a88aff;
+    }
+
+    .card .emoji {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #d0bdff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #b9bfd8;
+      font-size: 14px;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .interest {
+      background: #252b50;
+      color: #d8caff;
+      border: 1px solid #47416f;
+      padding: 10px 17px;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+
+    .quote {
+      text-align: center;
+      background: #1b2140;
+      border-radius: 20px;
+      padding: 45px 25px;
+      margin-top: 20px;
+      color: #d8caff;
+      font-size: 21px;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      background: #0b1022;
+      color: #aeb4d1;
+      font-size: 13px;
+      border-top: 1px solid #292f50;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header>
-<div class="hero">
-<div class="eyebrow">Curiosity • Creativity • Code</div>
-<h1>Hi, I'm Myra ✦</h1>
-<p>A high school student exploring computer science, building creative projects and learning about the universe.</p>
-<a class="btn" href="#projects">Explore my projects ↓</a>
-</div>
-</header>
-<nav aria-label="Main navigation">
-<a href="#about">About</a><a href="#projects">Projects</a><a href="#coding">Coding</a><a href="#astronomy">Astronomy</a>
-</nav>
-<main>
-<section id="about">
-<h2>🌱 About Me</h2>
-<div class="card">
-<p>I'm a student with a curious mind and a passion for technology. I enjoy coding, experimenting with ideas and turning concepts into creative projects. I'm also learning about astronomy and the wonders of the cosmos.</p>
-</div>
-</section>
-<section id="projects">
-<h2>💻 Projects</h2>
-<div class="cards">
-<div class="card"><h3>🎨 Kiko Artist</h3><p>A creative coloring-app concept built to make digital art fun and interactive.</p></div>
-<div class="card"><h3>💗 Mio</h3><p>A friendship-app project exploring profiles, matching and messaging features.</p></div>
-<div class="card"><h3>🚀 More soon</h3><p>I'm always learning and experimenting. More projects will appear here as I build them.</p></div>
-</div>
-</section>
-<section id="coding">
-<h2>⌨️ My Coding Journey</h2>
-<div class="card"><p>I'm exploring web development, programming and software design, learning step by step and making things along the way.</p><div><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Learning</span></div></div>
-</section>
-<section id="astronomy">
-<h2>🌌 Beyond the Code</h2>
-<div class="card"><p>Astronomy fascinates me: constellations, stars, planets, galaxies and the questions we still have about the universe. Looking up inspires me to keep learning and exploring.</p></div>
-</section>
-</main>
-<footer>Learning today. Building tomorrow. Exploring infinity. ✨</footer>
+
+  <nav>
+    <div class="logo">✦ MYRA</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#interests">Interests</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="tag">Student • Coder • Curious Mind</div>
+
+    <h1>Hello, I'm <span>Myra.</span></h1>
+
+    <p>
+      A young computer science enthusiast exploring technology,
+      creating digital experiences, and discovering the wonders
+      of the universe.
+    </p>
+
+    <a href="#about" class="button">Explore my world ↓</a>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">A Little About Me</h2>
+    <p class="section-intro">Curiosity is where my journey begins.</p>
+
+    <p class="about-text">
+      I'm a high school student with a curious mind and a passion
+      for learning. I enjoy computer science, coding, creating apps,
+      and exploring how technology can turn ideas into reality.
+      I'm also developing my knowledge of astronomy, fascinated
+      by stars, constellations, planets, and the mysteries of space.
+      I believe that learning never ends, and I'm excited about
+      everything I have yet to discover.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My Creative Lab</h2>
+    <p class="section-intro">
+      A few ideas I've been bringing to life.
+    </p>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="emoji">🎨</div>
+        <h3>Kiko Artist</h3>
+        <p>
+          A creative coloring app concept where artists can
+          explore pictures, express themselves, and connect.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emoji">💗</div>
+        <h3>Mio</h3>
+        <p>
+          A friendship app project designed to help people
+          discover shared interests and build connections.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emoji">💻</div>
+        <h3>Web Development</h3>
+        <p>
+          Exploring HTML, CSS, JavaScript, and the exciting
+          possibilities of building for the web.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="interests">
+    <h2 class="section-title">Beyond the Screen</h2>
+    <p class="section-intro">
+      The subjects and ideas that keep me curious.
+    </p>
+
+    <div class="interests">
+      <span class="interest">🌌 Astronomy</span>
+      <span class="interest">💻 Computer Science</span>
+      <span class="interest">🪐 Planetary Science</span>
+      <span class="interest">✨ Constellations</span>
+      <span class="interest">🧠 Problem Solving</span>
+      <span class="interest">🚀 Innovation</span>
+      <span class="interest">📚 Learning</span>
+      <span class="interest">🎨 Creativity</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="quote">
+      "The universe is full of things we haven't discovered,
+      and the world is full of things we haven't created yet."
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed with curiosity and creativity 💜</p>
+    <p>© 2026 Myra. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
